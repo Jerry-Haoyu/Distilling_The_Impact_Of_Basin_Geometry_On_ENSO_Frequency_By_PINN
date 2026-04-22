@@ -1,7 +1,15 @@
 [project]
-name = "final-project"
+name = "ensiollator"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = []
+
+dependencies = [
+    "ffmpeg>=1.4",
+    "h5py>=3.16.0",
+    "py-pde>=0.52.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
